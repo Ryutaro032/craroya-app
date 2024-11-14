@@ -67,3 +67,6 @@ group :test do
 end
 
 gem "webpacker", "~> 5.4"
+
+gem 'jsbundling-rails'
+gem 'vite_rails'
