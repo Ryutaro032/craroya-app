@@ -29,7 +29,8 @@ console.log('Visit the guide for more information: ', 'https://vite-ruby.netlify
 
 import 'vue2-animate/dist/vue2-animate.min.css';
 import { createApp } from 'vue';
-import Homes from '../components/Home.vue';
+import App from '../app.vue'
 
-const app = createApp(Homes);
-app.mount('#app');
+document.addEventListener('DOMContentLoaded', () => {
+  createApp(App).mount('#app')
+})
