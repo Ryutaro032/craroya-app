@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="home-container">
+    gogao
   </div>
 </template>
 
@@ -11,3 +12,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+.home-container{
+  width: 100%;
+  height: 100vh;
+  background-image: url('@/images/ClashRoyale_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>

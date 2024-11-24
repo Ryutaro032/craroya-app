@@ -23,7 +23,7 @@ li{
 .header-container{
   width: 100%;
   height: 80px;
-  background:linear-gradient(45deg,#0099FF 0%,#0099FF 50%,#FF3333 50%,#FF3333 100%);
+  background: #0099FF;
   display: flex;
   justify-content: space-between;
 }
