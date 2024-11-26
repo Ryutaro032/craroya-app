@@ -1,15 +1,23 @@
 <template>
   <div class="header-container">
-    <div class="header-left">
-      <h2 class="logo">クラロワ屋</h2>
-      
-    </div>
-    <div class="header-right">
-      <ul class="header-lists">
-        <li>新規登録</li>
-        <li>ログイン</li>
-        <li>ゲストログイン</li>
-      </ul>
+    <div class="header-contents flex">
+      <div class="header-left flex">
+        <h2 class="logo">クラロワ屋</h2>
+        <div class="tab-contents">
+          <ul class="tab-lists flex">
+            <li>HOME</li>
+            <li>デッキ一覧</li>
+            <li>カード詳細</li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-right">
+        <ul class="header-lists flex">
+          <li>新規登録</li>
+          <li>ログイン</li>
+          <li>ゲストログイン</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -20,11 +28,17 @@ li{
   list-style: none;
 }
 
+.flex{
+  display: flex;
+}
+
 .header-container{
   width: 100%;
   height: 80px;
   background: #0099FF;
-  display: flex;
+}
+
+.header-contents{
   justify-content: space-between;
 }
 
@@ -34,11 +48,24 @@ li{
 }
 
 .header-lists{
-  display: flex;
   margin-right: 10px;
 }
 
 .header-lists li{
+  color: white;
+  padding: 10px;
+}
+
+.tab-contents{
+  background: #0099FF;
+  justify-content: space-between;
+}
+
+.tab-lists{
+  margin-right: 10px;
+}
+
+.tab-lists li{
   color: white;
   padding: 10px;
 }

@@ -1,6 +1,5 @@
 <template>
   <div class="home-container">
-    gogao
   </div>
 </template>
 
@@ -17,9 +16,10 @@ export default {
 
 .home-container{
   width: 100%;
-  height: 100vh;
-  background-image: url('@/images/ClashRoyale_background.png');
+  height: 70vh;
+  background-image: url('@/images/Clans_Wars_background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.7;
 }
 </style>
