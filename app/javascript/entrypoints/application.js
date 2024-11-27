@@ -29,7 +29,22 @@ console.log('Visit the guide for more information: ', 'https://vite-ruby.netlify
 
 import 'vue2-animate/dist/vue2-animate.min.css';
 import { createApp } from 'vue';
-import Homes from '../components/Home.vue';
+import App from '../app.vue'
+import { createMemoryHistory, createRouter } from 'vue-router'
 
-const app = createApp(Homes);
-app.mount('#app');
+import Home from '../components/Home.vue'
+import Index from '../components/Index.vue'
+
+document.addEventListener('DOMContentLoaded', () => {
+  createApp(App).use(router).mount('#app')
+})
+
+const routes = [
+  { path: '/', component: Home},
+  { path: '/index', component: Index }
+]
+
+const router = createRouter({
+  history: createMemoryHistory(),
+  routes,
+})

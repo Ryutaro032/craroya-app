@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <button @click="toggleShow">Toggle</button>
-    <transition name="bounce">
-      <p v-if="show">Vue.jsでリッチなインタラクション!</p>
-    </transition>
+  <div class="home-container">
   </div>
 </template>
 
@@ -11,13 +7,19 @@
 export default {
   data() {
     return {
-      show: false
-    }
-  },
-  methods: {
-    toggleShow() {
-      this.show = !this.show;
     }
   }
 }
 </script>
+
+<style scoped>
+
+.home-container{
+  width: 100%;
+  height: 70vh;
+  background-image: url('@/images/Clans_Wars_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+</style>
