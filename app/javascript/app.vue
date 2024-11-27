@@ -1,17 +1,15 @@
 <template>
   <div id="app">
     <Header/>
-    <Homes/>
   </div>
+  <RouterView />
 </template>
 
 <script>
 import Header from './components/Header.vue';
-import Homes from './components/Home.vue';
 export default {
   components: {
-      Header,
-      Homes,
+      Header
     },
   data: function () {
     return {

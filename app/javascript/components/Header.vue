@@ -5,9 +5,8 @@
         <h2 class="logo">クラロワ屋</h2>
         <div class="tab-contents">
           <ul class="tab-lists flex">
-            <li>HOME</li>
-            <li>デッキ一覧</li>
-            <li>カード詳細</li>
+            <RouterLink to="/"><li>HOME</li></RouterLink>
+            <RouterLink to="/index"><li>デッキ一覧</li></RouterLink>
           </ul>
         </div>
       </div>
